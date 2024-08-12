@@ -17,6 +17,8 @@ const WEBHOOK_URLS = {
     "https://discord.com/api/webhooks/1271016133201362954/mmuqFIcZl9kki7dJPzfmlkysv1evkkGqnBnbu2ITP9RVqIDdK-uDVR5n_cG3lvue2KLU",
   roastkuy:
     "https://discord.com/api/webhooks/1271016278747906141/9G1tkbTogLaz0fe1hpn2i6wyW0r-d7M-nkfsR98zcglRXfVTK9UvnwF4tmELna7pn6Yr",
+  "propertree-club":
+    "https://discord.com/api/webhooks/1272463766738571298/CgH93lL7o7YYvGjHKztiuHDF2gaeDRIBD67fm1EdWC5CO7jhDuqXfVnnSFnLDLiKra3J",
 };
 
 app.use(bodyParser.json());
@@ -491,6 +493,10 @@ app.post("/agrio", (req, res) => {
 // Route for roastkuy
 app.post("/roastkuy", (req, res) => {
   handleWebhook(req, res, "roastkuy");
+});
+
+app.post("/propertree-club", (req, res) => {
+  handleWebhook(req, res, "propertree-club");
 });
 
 app.listen(PORT, () => {
