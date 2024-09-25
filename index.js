@@ -5,7 +5,7 @@ const axios = require("axios");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const WEBHOOK_URLS = {
-  "propertree.id":
+  "propertree":
     "https://discord.com/api/webhooks/1271015368122437753/TGp_DN5aGqWQL_njH2CBrX-wiafOfnTU3diyQUiSGcRYt9y94aO7Q_Pnr6UbzyZzOD5k",
   "koperasi-digital-propertree":
     "https://discord.com/api/webhooks/1271015710629560401/jzzK_USl2Np4X4MuX0rbeNFVXtRdbHBycUdbjYednL3r5q4mzLmKyMSRwUfI62fs_fgi",
